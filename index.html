@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="st.css" />
+  </head>
+  <body>
+    <script src="fun.js"></script>
+    <div id="main">
+      <div id="textbox">
+        <input
+          type="text"
+          placeholder="this is where text is enterd"
+          id="rat"
+        />
+        <textarea id="out"></textarea>
+      </div>
+      <div class="dibi" id="dibi1">
+        <button onclick="input('1')">1</button>
+        <button onclick="input('2')">2</button>
+        <button onclick="input('3')">3</button>
+        <button onclick="setop('+')">+</button>
+      </div>
+      <div class="dibi" id="dibi2">
+        <button onclick="input('4')">4</button>
+        <button onclick="input('5')">5</button>
+        <button onclick="input('6')">6</button>
+        <button onclick="setop('-')">-</button>
+      </div>
+      <div class="dibi" id="dibi3">
+        <button onclick="input('7')">7</button>
+        <button onclick="input('8')">8</button>
+        <button onclick="input('9')">9</button>
+        <button onclick="setop('*')">*</button>
+      </div>
+      <div class="dibi" id="dibi4">
+          <button onclick="capC()">C</button>
+          <button onclick="input('0')">0</button>
+          <button onclick="result()">=</button>
+          <button onclick="setop('/')">/</button>
+     
+         <button id="capbtn" onclick="disp()">this is a button to capitalize</button>
+       
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+#calculator {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 0.5fr; /* 3 columns for numbers, 1 narrow column for operators */
+    gap: 5px;
+}
+
+#buttons button {
+    background-color: #5bafcf;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#buttons button.operator {
+    background-color: #ffd700;
+    color: #333;
+    grid-column: 4; /* Places operators in the 4th column */
+}
+
+#buttons button.equals {
+    background-color: #ffd700;
+    color: #333;
+    grid-column: 4;
+    grid-row: span 2; /* Spans two rows */
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #5bafcf, #ffd700);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}

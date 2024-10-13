@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0.5vh;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's width and height */
+}
+
+/* Gradient background for the whole page */
+body {
+    background: linear-gradient(45deg, yellow, green); /* Yellow to green gradient */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the entire content vertically and horizontally */
+}
+
+/* Container for the text input and textarea */
+#textbox {
+    background-color: blue; /* Blue background for contrast */
+    display: flex;
+    width: 28vh; /* Adjusted width for better layout */
+    flex-wrap: wrap;
+    padding: 1vh;
+    border: 2px solid red; /* Red border for color contrast */
+}
+
+/* Individual button styling */
+button {
+    background-color: red; /* Red background for buttons */
+    color: white; /* White text for better readability */
+    border: none;
+    padding: 2vh 2.5vh; /* Increased button size */
+    margin: 1vh;
+    font-size: 2vh; /* Larger font size */
+    border-radius: 10px; /* Smooth rounded corners */
+    cursor: pointer;
+}
+
+/* Button hover effect for better UI */
+button:hover {
+    background-color: blue;
+    color: red; /* Inverted hover effect */
+}
+
+/* Styling for individual rows of buttons */
+.dibi {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+}
+
+/* Specific button container (C, 0, =, /) */
+#dibi4 {
+    width: 22vh;
+}
+
+/* Main container styling */
+#main {
+    width: 50vh; /* Adjust the width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: dashed;
+    border-color: blue;
+    padding: 2vh;
+}
+
+/* Styling for the container around the capitalize button */
+#capbtn {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Full width to align with the textarea above */
+}
+
+/* Capitalize button styling */
+#capbtn button {
+    width: 28vh; /* Same width as the textarea */
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 2vh;
+    font-size: 2vh;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#capbtn button:hover {
+    background-color: blue;
+    color: red; /* Inverted hover effect */
+}

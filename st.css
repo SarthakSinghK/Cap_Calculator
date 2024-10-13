@@ -1,0 +1,49 @@
+*{
+    margin: 0vh;
+    padding: 0.5vh;
+}
+#textbox{
+    background-color: rgb(51, 254, 0);
+    display: flex;
+    width: 22.8vh;
+
+    flex-wrap: wrap;  
+
+}
+#dibi1{
+    padding-top: 2vh;
+}
+#dibi4{
+   
+    width: 11vh;
+    
+}
+#capbtn {
+  margin-top: 1.2vh;
+  margin-left: -9.1vh; /* Use a negative value to move it to the left */
+  display: flex;
+  justify-content: center;
+  width: 32vh;
+  border-style: dashed;
+}
+
+
+/* #capbtn{
+    margin-top: 2vh;
+    margin-right: vh;
+    display: flex;
+    
+    justify-content: center;
+    width: 32vh;
+    border-style: dashed;
+} */
+#main{
+    width: vh;
+    margin-top: 40px;
+    display: flex;
+    /* height: 45vh; */
+    /* flex-wrap:nowrap; */
+    border-style: dashed;
+    flex-direction: column;
+    align-items: center;
+}
